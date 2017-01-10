@@ -92,7 +92,7 @@ with open(ifile_scheme, 'rt') as f:
     for row in mark_scheme:
         m_comm, m_points = row
         comm.append(str(m_comm) + ': '+ str(m_points) + ' mark(s)')
-        maxpoints += int(m_points)
+        maxpoints += float(m_points)
         criteria += 1
 
 available_marks = ET.SubElement(test, 'AVAILABLE_MARKS')
